@@ -132,6 +132,7 @@ class DM:
 
         return level
 
+    # TODO: Move this to Room or a room helper
     @classmethod
     def generate_room(cls) -> Room:
         """Generate a new Room. Room types determine what can be looted there."""
@@ -152,11 +153,12 @@ class DM:
         else:
             return random.choice(cls.adjectives)
 
+    # TODO: Move this to Room or a room helper
     @classmethod
     def _get_room_type(cls) -> str:
         roll = random.randint(0, 100)
 
-        if roll < Variables.GENERIC_ROOM_CHANCE:
+        if roll < Variables.ROOM_GENERIC_CHANCE:
             room_type = "generic"
         else:
             room_files = ["armory", "kitchen", "workshop"]

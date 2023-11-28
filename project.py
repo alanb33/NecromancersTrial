@@ -75,7 +75,7 @@ def play_game(length: int) -> None:
             # 6. Drink a healing potion.
             # Q. Surrender.
 
-            print_choices()
+            print_choices(room)
 
             try:
                 choice = input("\nChoose an option: ")
@@ -84,10 +84,9 @@ def play_game(length: int) -> None:
                     match choice:
                         case 1:
                             # search the room
-                            if room.search_chance > 0:
+                            if room.times_searched < room.max_searches:
                                 print("\nYou search the room...")
                                 print(do_search_result(room.search()))
-                                room.times_searched += 1
                                 util.continue_prompt()
                                 break
                             else:
@@ -467,10 +466,10 @@ def give_room_hints(room_type: str) -> None:
             print("You might be able to find potions here.")
 
 
-def print_choices() -> None:
+def print_choices(room: Room) -> None:
     print("\nWhat do you do?\n")
     print(
-        f"1. Search the room.\t\t(+{Variables.HUNGER_RATE}% hunger, chance to find items, food, and skeletons)"
+        f"1. Search the room.\t\t({room.searches_left} {util.make_plural('search', room.searches_left, ending='es')} left. +{Variables.HUNGER_RATE}% hunger, chance to find items, food, and skeletons)"
     )
     print("2. Rest here a while.\t\t(Gain HP and Hunger)")
     print("3. Look for a fight.\t\t(Immediately start a battle)")

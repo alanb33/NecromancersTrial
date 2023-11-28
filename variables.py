@@ -3,7 +3,11 @@ class Variables:
 
     """Generation variables"""
 
-    GENERIC_ROOM_CHANCE = 65
+    ROOM_GENERIC_CHANCE = 65
+    ROOM_SIZE_DIFFERENCE_CHANCE = 25
+    ROOM_AVG_SEARCHES = 3
+    ROOM_MIN_SEARCHES = 2
+    ROOM_MAX_SEARCHES = 4
 
     """Game variables."""
 
@@ -22,7 +26,6 @@ class Variables:
 
     """ Search variables. """
 
-    MAX_ROOM_SEARCHES = 3
     ROOM_BASE_SEARCH_CHANCE = 80
 
     """Minion variables."""

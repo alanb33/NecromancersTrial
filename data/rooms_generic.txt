@@ -1,0 +1,10 @@
+chamber
+cell
+room
+alcove
+enclosure
+hollow
+bunkhouse
+dormitory
+cavern
+pit

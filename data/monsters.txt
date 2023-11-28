@@ -1,0 +1,36 @@
+rat
+bat
+goblin
+kobold
+hobgoblin
+giant crab
+hyena
+lemure
+bone imp
+bone devil
+crazed prisoner
+troglodyte
+cave badger
+grimlock
+troll
+crocodile
+giant wasp
+jackal
+werejackal
+werewolf
+orc
+giant ant
+giant moth
+death's head butterfly
+swarm of spiders
+swarm of beetles
+swarm of wasps
+swarm of bees
+hill giant
+quasit
+ghast
+wight
+ghoul
+gargoyle
+haerbannog
+wererabbit

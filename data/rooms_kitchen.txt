@@ -1,0 +1,4 @@
+kitchen
+galley
+butchery
+scullery

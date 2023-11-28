@@ -1,0 +1,5 @@
+armory
+depot
+arsenal
+barracks
+garrison

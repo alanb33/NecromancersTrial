@@ -1,0 +1,6 @@
+workshop
+laboratory
+alchemical lab
+mortuary
+graveyard
+mausoleum

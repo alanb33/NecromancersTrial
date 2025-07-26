@@ -36,20 +36,12 @@ class DM:
     def setup_player(cls, name) -> None:
         """Set up initial player variables."""
 
-        cls._player = Player(name)
+        cls.player = Player(name)
 
         cls.player.potions = Variables.PLAYER_STARTING_POTIONS
         cls.player.food = Variables.PLAYER_STARTING_FOOD
 
         cls.add_generic_minion(silent=True)
-
-    @classmethod
-    @property
-    def player(cls) -> Player:
-        if cls._player == None:
-            return ValueError("Player does not exist.")
-        else:
-            return cls._player
 
     @classmethod
     def _load_file(cls, file) -> list:
@@ -138,7 +130,7 @@ class DM:
         """Generate a new Room. Room types determine what can be looted there."""
 
         if len(cls.rooms) == 0:
-            raise ValueEror("Rooms dict is empty.")
+            raise ValueError("Rooms dict is empty.")
 
         adjective = cls._get_adjective()
         room_type = cls._get_room_type()

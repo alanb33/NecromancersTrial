@@ -1,5 +1,8 @@
 # THE NECROMANCER'S TRIAL
 #### Description:
+
+To play the game, do `py project.py`!
+
 The Necromancer's Trial is a text adventure resource management dungeon crawler videogame. You take the role of a necromancer who has been thrown into the Dungeon of Despair, and you must use your unique skills to find the Runes of Escape and get out of the dungeon. To run the game, execute project.py.
 
 One key principle of this game is transparency. I feel that games sometimes don't do the best job at explaining their mechanics, so I tried to give details about the possible actions you can take as well as sharing details of their consequences. I didn't want anyone to get irritated by poorly-explained mechanics, like I have from some videogames in the past.

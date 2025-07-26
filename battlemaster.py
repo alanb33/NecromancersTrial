@@ -176,7 +176,7 @@ class BattleMaster:
             f"3. Cast Spell: Vampiric Touch. ({self._get_vampiric_touch_damage()} damage, heal for damage dealt.)"
         )
         print(
-            f"4. Cast Spell: Dealt Bolt. ({self._get_death_bolt_damage()} damage, but you take {self._get_death_bolt_self_damage()} in exchange.)"
+            f"4. Cast Spell: Death Bolt. ({self._get_death_bolt_damage()} damage, but you take {self._get_death_bolt_self_damage()} in exchange.)"
         )
         if self.monster.name != "Runekeeper":
             print(
